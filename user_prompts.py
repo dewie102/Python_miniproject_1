@@ -18,7 +18,7 @@ def display_guess(guess):
 
 
 def display_high_low_question():
-    return get_high_or_low(f"Was the guess too high or too low?\n1. high\n2.low")
+    return get_high_or_low(f"Was the guess too high or too low?\n1. Too High\n2. Too Low")
 
 if __name__ == "__main__":
     welcome_message()

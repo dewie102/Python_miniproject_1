@@ -14,7 +14,8 @@ def main():
     playing = True
     while playing:
         user_prompts.display_intro(upper_limit)
-        playing = game.play(upper_limit)
+        os.system("clear")
+        playing = game.play(upper_limit, max_tries)
 
 if __name__ == "__main__":
     main()

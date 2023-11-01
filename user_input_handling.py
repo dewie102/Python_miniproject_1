@@ -1,15 +1,15 @@
 def get_yes_or_no(prompt):
-    reponse = ""
+    response = ""
     valid_answer = False
     while(not valid_answer):
         print(prompt)
-        answer = input("> ").trim().lower()
+        answer = input("> ").strip().lower()
 
         if(answer == "y"):
-            reponse = "YES"
+            response = "YES"
             valid_answer = True
         elif(answer == "n"):
-            reponse = "NO"
+            response = "NO"
             valid_answer = True
         else:
             print("Invalid response, please try again")
@@ -18,17 +18,17 @@ def get_yes_or_no(prompt):
 
 
 def get_high_or_low(prompt):
-    reponse = ""
+    response = ""
     valid_answer = False
     while(not valid_answer):
         print(prompt)
-        answer = input("> ").trim()
+        answer = input("> ").strip()
 
         if(answer == "1"):
-            reponse = "HIGH"
+            response = "HIGH"
             valid_answer = True
-        elif(anwer == "2"):
-            reponse = "LOW"
+        elif(answer == "2"):
+            response = "LOW"
             valid_answer = True
         else:
             print("Invalid response, please try again")
