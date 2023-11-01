@@ -54,7 +54,7 @@ def play(upper_limit, max_tries) -> None:
             # We win, give details of the game and return
             os.system("clear")
             if(guess == 69 or guess == 420):
-                print("HAHA... nice")
+                user_prompts.nice_prompt((f"{guess}... HAHA... nice"))
 
             print("YES! Told you I could beat you!")
             print(f"You lasted {count + 1} rounds, good job!")

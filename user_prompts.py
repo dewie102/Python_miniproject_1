@@ -30,3 +30,7 @@ def ask_to_play_again() -> str:
 
 def ask_for_upper_limit(default_max) -> int:
     return get_number(f"Pick an max value to pick a number from", default_max)
+
+
+def nice_prompt(prompt):
+    print(pyfiglet.figlet_format(prompt))
