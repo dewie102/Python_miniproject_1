@@ -2,6 +2,7 @@
 
 import os
 import user_prompts
+import game
 
 max_tries: int = 7
 upper_limit: int = 100
@@ -13,12 +14,7 @@ def main():
     playing = True
     while playing:
         user_prompts.display_intro(upper_limit)
-
-        for count in range(max_tries):
-            print(count)
-
-        playing = False
-
+        playing = game.play(upper_limit)
 
 if __name__ == "__main__":
     main()
