@@ -5,13 +5,13 @@ def welcome_message() -> None:
     print(pyfiglet.figlet_format("Welcome to Number Guesser!"))
     print()
     print(f"The game were I guess the number you are thinking")
-    print("the number of tries is based on the max number you pick")
+    print("The number of rounds is based on the max number you pick")
     input("press enter to continue...")
 
 
 def display_intro(upper_range, max_tries) -> None:
     print(f"Think of a number between 0 and {upper_range}")
-    print(f"I will have {max_tries} to guess the correct number")
+    print(f"I will have {max_tries} rounds to guess the correct number")
     print("At any point if you want to quit please enter 'q' or 'quit'")
     input("Press enter when ready to continue")
 

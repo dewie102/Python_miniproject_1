@@ -59,6 +59,9 @@ def get_number(prompt, default_max) -> int:
                 if(number >= 10000000):
                     print("Come on... do you even know numbers that high?")
                     print("Try again")
+                elif(number < 0):
+                    print("You need to pick a number greater than 0")
+                    print("Try again")
                 else:
                     response = number
                     valid_answer = True
